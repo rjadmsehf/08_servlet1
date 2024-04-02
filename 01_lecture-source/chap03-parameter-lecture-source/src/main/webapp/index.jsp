@@ -27,16 +27,16 @@
             <option value="etc">기타</option>
         </select>
         <label>취미 : </label>
-        <input type="checkbox" name="hobbies" id="movie" value="movie"><label for="movie">영화</label>
-        <input type="checkbox" name="hobbies" id="music" value="music"><label for="music">음악</label>
-        <input type="checkbox" name="hobbies" id="sleep" value="sleep"><label for="sleep">수면</label>
+        <input type="checkbox" name="hobbies" id="movie" value="영화"><label for="movie">영화</label>
+        <input type="checkbox" name="hobbies" id="music" value="음악"><label for="music">음악</label>
+        <input type="checkbox" name="hobbies" id="sleep" value="수면"><label for="sleep">수면</label>
         <br>
         <input type="submit" value="GET 요청">
     </form>
     <hr>
     <h4>a 태그의 href 속성에 직접 파라미터를 쿼리스트링 형태로 작성하여 get 요청</h4>
-    <a href="querystring?name=조평훈&age=20&birthday=2024-04-10&gender=M&national=ko&hobbies=music&hobbies=sleep">
-        쿼리스트링을 이용한 값 전달
+    <a href="https://www.kua.go.kr/uaptm010/selectMain.do">
+         국취 등록사이트
     </a>
     <hr>
     <h4>form 태그를 이용한 post 방식 요청</h4>
@@ -59,9 +59,9 @@
             <option value="etc">기타</option>
         </select>
         <label>취미 : </label>
-        <input type="checkbox" name="hobbies" id="movie1" value="movie"><label for="movie1">영화</label>
-        <input type="checkbox" name="hobbies" id="music1" value="music"><label for="music1">음악</label>
-        <input type="checkbox" name="hobbies" id="sleep1" value="sleep"><label for="sleep1">수면</label>
+        <input type="checkbox" name="hobbies" id="movie1" value="영화"><label for="movie1">영화</label>
+        <input type="checkbox" name="hobbies" id="music1" value="음악"><label for="music1">음악</label>
+        <input type="checkbox" name="hobbies" id="sleep1" value="수면"><label for="sleep1">수면</label>
         <br>
         <input type="submit" value="POST 요청">
     </form>
