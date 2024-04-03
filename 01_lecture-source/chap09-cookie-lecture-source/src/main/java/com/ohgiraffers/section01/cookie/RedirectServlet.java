@@ -21,7 +21,7 @@ public class RedirectServlet extends HttpServlet {
 
         System.out.println("firstName = " + firstName);
         System.out.println("lastName = " + lastName);
-
+        System.out.println("넌누구니");
         /* 필기
             실행시 null 이뜬다.
             왜냐? request 객체는 1회 요청 시 하나의 객체를 만들게 되는데
@@ -35,16 +35,19 @@ public class RedirectServlet extends HttpServlet {
          */
         Cookie[] cookies = req.getCookies();
 
-        for (int i = 0; i < cookies.length; i++){
-            System.out.println("[cookie]" + cookies[i].getName() + " : " + cookies[i].getValue());    // 필기 name key 값 value = 값
-
-            if ("firstName".equals(cookies[i].getName())){
-                firstName = cookies[i].getValue();
-            }else if ("lastName".equals(cookies[i].getName())){
-                lastName = cookies[i].getValue();
-            }
-
-        }
+//        for (int i = 0; i < cookies.length; i++){
+//            System.out.println("[cookie]" + cookies[i].getName() + " : " + cookies[i].getValue());    // 필기 name key 값 value = 값
+//
+//            if ("firstName".equals(cookies[i].getName())){
+//                firstName = cookies[i].getValue();
+//            }else if ("lastName".equals(cookies[i].getName())){
+//                lastName = cookies[i].getValue();
+//            }
+        System.out.println(cookies[0].getName());
+        System.out.println(cookies[0].getValue());
+        System.out.println(cookies[1].getName());
+        System.out.println(cookies[1].getValue());
+//        }
 
         StringBuilder responseText = new StringBuilder();
         responseText.append("<!doctype html>\n")

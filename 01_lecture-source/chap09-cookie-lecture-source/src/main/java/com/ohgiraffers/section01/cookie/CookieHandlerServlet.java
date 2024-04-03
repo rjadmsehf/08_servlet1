@@ -20,6 +20,7 @@ public class CookieHandlerServlet extends HttpServlet {
 
         System.out.println("firstName = " + firstName);
         System.out.println("lastName = " + lastName);
+        System.out.println("여기니?");
 
 //        resp.sendRedirect("redirect");
 
