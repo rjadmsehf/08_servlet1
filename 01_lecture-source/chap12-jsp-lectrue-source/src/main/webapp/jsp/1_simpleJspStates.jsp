@@ -1,11 +1,3 @@
-<%@ page import="java.util.Scanner" %><%--
-  Created by IntelliJ IDEA.
-  User: 나
-  Date: 2024-04-03
-  Time: AM 10:56
-  To change this template use File | Settings | File Templates.
---%>
-
 <!-- 필기. 지시자 태그 (page,include, taglib) 지시자 태그가 있다.-->
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -26,7 +18,7 @@
 
     <%-- 필기. 스크립트릿 태그 <%%>--%>
     <%
-        Scanner sc = new Scanner(System.in);
+
         name = "전준규";
         age = 24;
 
